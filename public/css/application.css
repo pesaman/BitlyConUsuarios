@@ -1,0 +1,18 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+th {
+  text-align: left;
+}
+.messages{
+  margin: auto 0;
+  display: block;
+  border: none;
+  color:red;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+}

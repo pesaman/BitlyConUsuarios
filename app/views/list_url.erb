@@ -1,0 +1,39 @@
+<h1>All Urls</h1>
+
+<h2><a href="/"></a></h2>
+ <a href="/"><button id="Home" type="button">Home</button></a><br><br>
+<table>
+  <tr>
+    <th width="25">ID</th>
+    <th width="200">Long url</th>
+    <th>Short ulr</th>
+   
+  </tr>
+<% @ulr.each_with_index do |url, index| %>
+
+  <tr>
+    <td><%= index + 1 %>.</td>
+    <td><%= url.long_url %> </td>
+    <td><a href="/short_url/<%= url.id %>" target="_blank"><%= url.short_url %></a></td>
+
+  </tr>
+
+<% end %>
+</table>
+
+
+<!--  if url
+    url.update_attribute(click_count: counter+=1)
+  end
+  counter
+
+  long = url.long_url
+end -->
+
+<!-- get '/short_url/:url_id' do
+  p url = Url.find(params[:url_id])
+  #redirigir al sitio de la url, usando long_url
+  #redirect
+  long = url.long_url
+  redirect to("#{long}")
+end -->
